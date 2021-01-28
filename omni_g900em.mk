@@ -1,5 +1,7 @@
 # Release name
 PRODUCT_RELEASE_NAME := g900em
+PRODUCT_USE_DYNAMIC_PARTITIONS := true
+DEVICE_PATH := device/lge/g900em
 
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
