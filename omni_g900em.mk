@@ -6,6 +6,9 @@ DEVICE_PATH := device/lge/g900em
 # Inherit from those products. Most specific first.
 $(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
+PRODUCT_COPY_FILES += $(call find-copy-subdir-files,*,$(LOCAL_PATH)/recovery/root,recovery/root) \
+    $(LOCAL_PATH)/prebuilt/dtb:dtb.img
+
 # Inherit from device
 $(call inherit-product, device/lge/g900em/device.mk)
 
