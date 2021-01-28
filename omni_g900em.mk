@@ -2,7 +2,7 @@
 PRODUCT_RELEASE_NAME := g900em
 
 # Inherit from those products. Most specific first.
-$(call inherit-product, $(SRC_TARGET_DIR)/product/core_minimal.mk)
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base.mk)
 
 # Inherit from device
 $(call inherit-product, device/lge/g900em/device.mk)
